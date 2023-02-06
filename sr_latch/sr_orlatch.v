@@ -1,5 +1,5 @@
 `timescale 1ns / 1ps
-module sr_latch(
+module sr_orlatch(
     input S,
     input R,
     output Q,
