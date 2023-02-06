@@ -1,11 +1,11 @@
-module sr_latch_tb();
+module sr_nandlatch_tb();
   reg S,R;
   wire Q,Qn;
-  sr_latch dut(S,R,Q,Qn);
+  sr_nandlatch dut(S,R,Q,Qn);
   initial
     begin
       $dumpfile("srl.vcd");
-      $dumpvars(1,sr_latch_tb);
+      $dumpvars(1,sr_nandlatch_tb);
       end
   
 initial 
