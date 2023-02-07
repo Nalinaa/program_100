@@ -14,10 +14,7 @@ endmodule
 module ripple_counter(t0,t1,t2,clk,out);
   input t0,t1,t2,clk;
   output [2:0] out;
-  wire qo,q1,q2,q0_bar,q1_bar,q2_bar;
-  assign t0=1;
-  assign t1=1;
-  assign t2=1;
+  wire q0,q1,q2,q0_bar,q1_bar,q2_bar;
   tff tff0(.t(t0),.clk(clk),.q(q0),.q_bar(q0_bar));
   tff tff1(.t(t1),.clk(q0),.q(q1),.q_bar(q1_bar));
   tff tff2(.t(t2),.clk(q1),.q(q2),.q_bar(q0_bar));
