@@ -11,7 +11,13 @@ module ripple_counter_tb;
     begin
       clk=0;
       $monitor($time,"\tout=%b",out);
-      
+       
+      forever 
+         begin
+            t0=1;
+            t1=1;
+            t2=1;
+          end
     end
   always #5 clk=~clk;
 endmodule
