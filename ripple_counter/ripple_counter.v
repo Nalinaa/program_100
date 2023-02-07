@@ -3,7 +3,7 @@ module tff(t,clk,q,q_bar);
   output q,q_bar;
   reg q;
   assign q_bar=~q;
-  always@(posedge clk)
+  always@(negedge clk)
     begin
     case(t)
       0:q<=q;
