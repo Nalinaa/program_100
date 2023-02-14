@@ -1,4 +1,4 @@
-module mod_n_counter 
+module mod__n_counter 
   # (parameter N = 10,  
      parameter WIDTH = 4)  
   
